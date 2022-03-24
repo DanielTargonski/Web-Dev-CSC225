@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- index.html-->
+<!-- EZ-Pass form -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-ZPass Form</title>
+</head>
+<body>
+    <table cellpadding="10" width="1000"> <!-- Main Table -->
+        <tr>
+            <td bgcolor="purple" colspan="4"><font color="white">Account Profile</font></td>
+        </tr>
+        <tr>
+            <td align="right" width="250"><img src="./hand.png" alt="hand" height='30'></td>
+            <td colspan="3">Registered fields are marked in *</td>
+        </tr>
+        <tr bgcolor="Thistle">
+            <td colspan="4" >Account Holder Information</td>
+        </tr>
+        <tr>
+            <td width="250" align="right">Contact Name:</td>
+            <td width="250" align="left">Daniel Targonski</td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <form action="">
+        <tr>
+            <td width="250" align="right"><label for="addressline1">Address Line1:</label></td>
+            <td width="250" align="left"><input type="text" name="addressline1" id="addressline1">*</td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="addressline2">Address Line2:</label></td>
+            <td width="250" align="left"><input type="text" name="addressline2" id="addressline2"></td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="city">City:</label></td>
+            <td width="250" align="left"><input type="text" name="city" id="city">*</td>
+            <td width="250"></td>
+            <td width="250"> <label for="state">State:</label><select name="state" id="state"><option value="NY">NY</option></select>*</td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="country">Country:</label></td>
+            <td width="250" align="left"><select name="country" id="country"><option value="usa">USA</option></select>*</td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="zip">Zip:</label></td>
+            <td width="250" align="left"><input type="text" size="3" name="zip" id="zip">*</td>
+            <td width="250"><input type="text" size="3" name="zip4" id="zip4"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="username">User Name:</label></td>
+            <td width="250" align="left"><input type="text" name="username" id="username"></td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="Daytime Phone">Daytime Phone:</label></td>
+            <td width="250" align="left"><input type="text" name="Daytime Phone" id="Daytime Phone">*</td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="Evening Phone">Evening Phone:</label></td>
+            <td width="250" align="left"><input type="text" name="Evening Phone" id="Evening Phone"></td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="Cell Phone">Cell Phone:</label></td>
+            <td width="250" align="left"><input type="text" name="Cell Phone" id="Cell Phone"></td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"></td>
+            <td colspan="3" align="left"><p>You can receieve E-ZPass New York Mobile Alerts! See the <a href="">Terms and Conditions</a>
+            or the <a href="">Description of Mobile Alerts.</a> Message and Data Rates May Apply.</p></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="mobile-alerts">Mobile Alerts:</label></td>
+            <td colspan="3" align="left">
+                <input type="radio" name="mobile-alerts" id="mobile-alerts-agree">
+                <label for="agree"> I agree to the <a href="">Terms and Conditions</a> and want to Opt-in.</label>
+                <input type="radio" name="mobile-alerts" id="mobile-alerts-disagree">
+                <label for="disagree">I decline Mobile Alerts.</label>
+                </td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="fax">Fax:</label></td>
+            <td width="250" align="left"><input type="text" name="fax" id="fax"></td>
+            <td width="250"></td>
+            <td width="250"></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"></td>
+            <td colspan="3" align="left"><p>
+                You can now participate in Tolls by Mail customer surveys on a variety of E-ZPass subjects
+                and new services. If you choose to participate in future surveys we will contact you when
+                an applicable survey is activated.<br>Will you be willing to participate in a future survey?
+            </p></td>
+        </tr>
+        <tr>
+            <td width="250" align="right"><label for="future-surveys">Future Surveys:</label></td>
+            <td colspan="3" align="left">
+                <input type="checkbox" name="future-surveys" id="future-surveys">
+                <label for="future-surveys">I would be willing to participate in a future survey.</label>
+            </td>
+        </tr>
+        <tr>
+            <td width="250" align="right"></td>
+            <td width="250" align="left"></td>
+            <td width="250" align="right"></td>
+            <td width="250">
+                <input type="reset" value="Cancel">&emsp; <input type="submit" value="Save">
+            </td>
+        </tr>
+        
+        </form>
+    </table> <!-- end main table -->
+</body>
+</html>
