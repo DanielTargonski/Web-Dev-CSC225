@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: Helvetica, sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main-title {
+    height: 50px;
+    font-size: 75px;
+    line-height: 50px;
+    margin: 25px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    font-size: 35px;
+}
+
+li {
+    display: inline-block;
+}
+
+.left-nav li+li {
+    padding-left: 15px;
+}
+
+nav {
+    height: 100px;
+    margin: 30px 0;
+    border-bottom: 3px solid black;
+}
+
+.main-nav .left-nav {
+    width: 500px;
+    float: left;
+    line-height: 120px;
+}
+
+.main-nav .right-nav {
+    float: right;
+    line-height: 120px;
+}
+
+.main-nav .right-nav a {
+    font-size: 18px;
+}
+
+.main-nav .right-nav a {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
+
+/* Lord Vader Hates Animals*/
+a:link {}
+
+a:visited {}
+
+a:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+.info {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    text-align: left;
+    font-size: 16px;
+}
+
+.info img {
+    height: 20px;
+}
+
+.masks {
+    background-color: yellow;
+    text-decoration: underline;
+    padding: 0 5px;
+}
+
+.warhol {
+    display: block;
+    padding-bottom: 4em;
+    border-bottom: 2px solid black;
+}
+
+.warhol img {
+    width: 100%;
+}
+
+.warhol .andy-title {
+    margin-top: 20px;
+    height: 80px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.warhol .right {
+    float: right;
+    font-size: 16px;
+}
+
+.button {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+.ft-exhb {
+    margin-top: 40px;
+    padding-bottom: 1em;
+}
+
+#ft-title {
+    font-size: 35px;
+}
+
+.exhb-title a {
+    float: right;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.row {
+    width: 100%;
+    /* height: 500px; */
+    padding-bottom: 4em;
+    border-bottom: 2px solid black;
+}
+
+.card {
+    width: 300px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.card:not(:last-of-type) {
+    margin-right: 50px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+}
+
+.card .event-date {
+    font-size: .6em;
+}
+
+.btn {
+    display: block;
+    width: 100px;
+}
+
+#site-footer {
+    margin-top: 0;
+    background: #000;
+    color: #fff;
+    font-size: .9em;
+}
+
+.footer-container {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.top-section {
+    height: 250px;
+}
+
+.left-footer {
+    padding: 25px;
+    width: 450px;
+    float: left;
+}
+
+.right-footer {
+    padding: 25px;
+    width: 500px;
+    float: right;
+}
+
+#EMAIL {
+    width: 270px;
+    padding: 0.75em;
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+}
