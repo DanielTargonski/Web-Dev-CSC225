@@ -1,0 +1,231 @@
+* { margin: 0; padding: 0; }
+body {
+    background: white;
+    color: black;
+    font: 12px/18px Helvetica, Verdana, Arial, sans-serif;
+}
+
+.nav {
+    background: darkslategray;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.nav ._ { text-align: right; }
+
+.nav2 {
+    background: orange;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+
+._ {
+    margin: 0 auto;
+    height: 100%; 
+    width: 800px;
+}
+
+.nav a:link { color: white; text-decoration: none; }
+.nav a:visited { color: white; text-decoration: none; }
+.nav a:hover { color: skyblue; text-decoration: underline; }
+
+.nav2 a { 
+    display: block;
+    float: right;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.nav2 a:link { color: white; text-decoration: none; }
+.nav2 a:visited { color: white; text-decoration: none; }
+.nav2 a:hover { background-color: #f60; text-decoration: none; }
+
+.menu {
+    border-bottom: gray 1px solid;
+    height: 60px;
+    width: 100%;
+}
+
+.menu ._ {  }
+
+.menu a { 
+    display: block;
+    font-weight: bold;
+    float: left;
+    height: 50px;
+    line-height: 17px;
+    margin-left: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 60px;
+}
+
+.menu a:link { color: black; text-decoration: none; }
+.menu a:visited { color: black; text-decoration: none; }
+.menu a:hover { color: skyblue; text-decoration: underline; }
+
+#logo {
+    display: block;
+    height: 30px;
+    float: left;
+    margin-top: 15px;
+}
+
+.banner { margin-top: 20px; }
+.banner img { display: block; width: 800px; }
+.banner .title {
+    background-color: #1268d2;
+    color: white;
+    height: 60px;
+    line-height: 22px;
+    padding: 20px;
+}
+
+.banner .title .maintitle { font-weight: bold; font-size: 16px; }
+.banner .title .subtitle { font-weight: bold; font-size: 12px; }
+
+.panels {
+    background: white;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.panel {
+    display: inline-block;
+    background: white;
+    height: 298px;
+    width: 250px;
+    float: left;
+    margin-left: 22px;
+    border: 1px solid blue;
+}
+
+.panel:first-child {
+    margin-left: 0;
+}
+
+.paneltitle {
+    height: 25px;
+    background: #1268d2;
+    line-height: 25px;
+    color: white;
+    padding-left: 15px;
+}
+
+
+
+.footer {
+    height: 200px;
+}
+
+.panel .content {
+    background: white;
+    height: 248px;
+    overflow: scroll;
+}
+
+.panel .footer {
+    height: 25px;
+    line-height: 25px;
+    width: auto;
+    padding-left: 20px;
+}
+
+.panel .content ul {
+    width: 180px;
+    list-style: none;
+    margin: 15px auto;
+}
+
+.panel .content .eventdate {
+    font-size: 9px;
+}
+
+.panel .content li {
+    margin: 7px 0;
+    border-bottom: 1px solid slategrey;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.boxes {
+    height: 400px;
+    margin-top: 20px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.box h3 {
+    color: white;
+    font-size: 24px;
+    margin: 30px auto 0;
+    line-height: 30px;
+    width: 160px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.box h4 {
+    color: white;
+    font-size: 10px;
+    margin: 10px auto 0;
+    width: 160px;
+}
+
+.box h4 a { color: white; text-decoration: none;}
+.box h4 a:visited {text-decoration: none;}
+.box h4 a:hover {text-decoration: underline;}
+
+.box img { height: 200px; width: 200px; }
+
+.program {
+    background: #1268d2;
+}
+
+.new_visit {
+    background: gray;
+}
+
+a{
+    color: rgb(78, 88, 97);
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+
+}
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+a:active {
+
+}
+
+
+/*   a:link {
+        color: #f60;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #fc0;
+        text-decoration: none;
+    }
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+    a:active {
+        color: black;
+        text-decoration: underline;
+    }*/
+    
