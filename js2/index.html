@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script type="text/javascript" src="./script.js">
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>JavaScript 1</title>
+    
+</head>
+<body>
+
+<div id="x">Hello</div>
+
+<input id="num1"/> + <input id="num2" /> = <span id="c"></span>
+<br>
+<input type="button" id="add" value="Calculate">
+    <br><br>
+<label for="n1">Input a number</label>
+<input id="n1"> <span id="randomDisplay"></span> <span id="result"></span>
+<!-- <img src="./resources/images/dice.jpg" alt="dice" onclick="rollDice()" height="50px"> -->
+<br>
+<input type="button" value="Roll" onclick="rollDice()">
+
+<br>
+<br>
+<!-- <div id="box"></div> -->
+<br>
+<!-- traffic light -->
+<!-- <div id="r" onclick="changeTrafLightColor(this.id);"></div>
+<br>
+<div id="y" onclick="changeTrafLightColor(this.id);"></div>
+<br>
+<div id="g" onclick="changeTrafLightColor(this.id);"></div> -->
+
+<!-- jQuery -->
+<script>
+$(function() {
+
+
+    // $(".light").css("background", "red")
+
+    // $(".light").html("Hello")
+
+    // $(".light").click(function() {
+    //     $(this).fadeOut()
+    //     $(this).fadeIn()
+    // })
+
+    $(".menuItem").hide()
+    $(".menu").mouseenter(function() {
+        let menuid = $(this).attr("id");
+        let menitemid = menuid + '1'
+        $("#" + menitemid).fadeIn(1000)
+    })
+    $(".menu").mouseleave(function() {
+        let menuid = $(this).attr("id");
+        let menitemid = menuid + '1'
+        $("#" + menitemid).fadeOut(1000)
+    })
+
+
+
+})
+
+$(() => {
+    $("#a").mouseenter(() => {
+        $("#b").html("O")
+    }).mouseleave(() => {
+        $("#b").html("X")
+    })
+})
+</script>
+<!-- <div class="menu" id="m1">Menu 1</div>
+<div class="menuItem" id="m11"></div>
+<div class="menu" id="m2">Menu 2</div>
+<div class="menuItem" id="m21"></div>
+<div class="menu" id="m3">Menu 3</div>
+<div class="menuItem" id="m31"></div> -->
+
+<!-- alternating boxes -->
+<div id="a"></div>
+<div id="b">X</div>
+
+</body>
+</html>
