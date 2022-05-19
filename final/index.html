@@ -1,0 +1,176 @@
+<!--A 5x5 array that flips circle buttons of adj of circle -->
+<!-- radius 40 margin 10 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final</title>
+    <style>
+    html, body {height: 100%; width: 100%;}
+    .board { position: relative; margin: 100px auto; height: 500px; width: 500px; border: 2px solid black;
+        align-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+        .circle { 
+            box-sizing: border-box;
+            /* padding: 10px; */
+            height: 80px; width: 80px;
+            border-radius: 50%;
+        border: 1px solid black;
+        position: absolute;
+            }
+            .black {
+                background: black;
+            }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    var m = [[ 1, 2, 3, 4, 5 ],
+                 [ 6, 7, 8, 9, 10 ],
+                 [ 11, 12, 13, 14, 15 ],
+                [16, 17, 18, 19, 20],
+                [21, 22, 23, 24, 25]
+                ];
+
+        function init()
+        {
+            for ( var i = 0; i < 5; i++ )
+            {
+                for ( var j = 0; j < 5; j++ )
+                {
+                    let id = m[i][j];
+                    $("#c" + id).css("left", j * 100 + 10 + "px");
+                    $("#c" + id).css("top", i * 100 + 10 + "px");
+                }
+            }
+        }
+
+        function get_loc(id)
+        {
+            for ( var i = 0; i < 5; i++ ) // row
+            {
+                for ( var j = 0; j < 5; j++ ) // col
+                {
+                    if ( m[i][j] == id ) return [i, j];
+                                            //   0  1
+                                            //   r  c
+                }
+            }
+        }
+
+        const checkVictory = () => {
+            let win = true
+            for ( var i = 0; i < 5; i++ )
+            {
+                for ( var j = 0; j < 5; j++ )
+                {
+                    let id = m[i][j];
+                    // check for black class
+                    let hasBlack = $(`#c` + id).attr('class').search('black')
+                    console.log(`hasBlack: ${hasBlack}`)
+                    if (hasBlack < 0) {
+                        console.log('putting win to false!')
+                        win = false
+                        break;
+                    }
+                }
+            }
+            if (win) {
+                alert('You win!')
+            }
+        }
+        
+        $(document).ready(() => {
+            init();
+
+            $('.circle').on('click', event => {
+                // console.log($(event.currentTarget))
+                $(event.currentTarget).toggleClass('black');
+                let curID = $(event.currentTarget).attr('id').slice(1);
+                let curLoc = get_loc(curID)
+                let x = curLoc[0]
+                let y = curLoc[1]
+                console.log(`x: ${x} y: ${y}`)
+                // console.log(`classes: ${$(`#c` + curID).attr('class').search('black')}`)
+                // now check around the curLoc. if a circle exists
+                // toggle its black class
+                // console.log(`above: ${'#c' + m[x-1][y]}`)
+                // check above
+                try {
+                    if (m[x-1][y] > 0) {
+                    // get the id and toggle it
+                    let upID = m[x-1][y];
+                    $('#c' + `${upID}`).toggleClass('black');
+                }    
+                } catch (error) {
+                    
+                }
+
+                try {
+                    if (m[x+1][y] > 0) {
+                    let belowID = m[x+1][y];
+                    $('#c' + `${belowID}`).toggleClass('black');
+                }
+                } catch (error) {
+                    
+                }
+
+                try {
+                    if (m[x][y-1] > 0) {
+                    let leftID = m[x][y-1];
+                    $('#c' + `${leftID}`).toggleClass('black');
+                }
+                } catch (error) {
+                    
+                }
+                
+                try {
+                    if (m[x][y+1] > 0) {
+                    let rightID = m[x][y+1];
+                    $('#c' + `${rightID}`).toggleClass('black');
+                }
+                } catch (error) {
+                    
+                }
+            checkVictory();
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <div class="board">
+        <div class="circle black" id="c1"></div>
+        <div class="circle" id="c2"></div>
+        <div class="circle black" id="c3"></div>
+        <div class="circle black" id="c4"></div>
+        <div class="circle black" id="c5"></div>
+        <div class="circle" id="c6"></div>
+        <div class="circle" id="c7"></div>
+        <div class="circle" id="c8"></div>
+        <div class="circle black" id="c9"></div>
+        <div class="circle black" id="c10"></div>
+        <div class="circle black" id="c11"></div>
+        <div class="circle" id="c12"></div>
+        <div class="circle black" id="c13"></div>
+        <div class="circle" id="c14"></div>
+        <div class="circle black" id="c15"></div>
+        <div class="circle black" id="c16"></div>
+        <div class="circle black" id="c17"></div>
+        <div class="circle" id="c18"></div>
+        <div class="circle" id="c19"></div>
+        <div class="circle" id="c20"></div>
+        <div class="circle black" id="c21"></div>
+        <div class="circle black" id="c22"></div>
+        <div class="circle black" id="c23"></div>
+        <div class="circle" id="c24"></div>
+        <div class="circle black" id="c25"></div>
+
+    </div> 
+
+</body>
+</html>
